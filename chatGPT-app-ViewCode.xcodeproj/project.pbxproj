@@ -7,102 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38F7421F2A17E56300AD775E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F7421E2A17E56300AD775E /* AppDelegate.swift */; };
-		38F742212A17E56300AD775E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F742202A17E56300AD775E /* SceneDelegate.swift */; };
-		38F742232A17E56300AD775E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F742222A17E56300AD775E /* ViewController.swift */; };
-		38F742262A17E56300AD775E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F742242A17E56300AD775E /* Main.storyboard */; };
-		38F742282A17E56400AD775E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38F742272A17E56400AD775E /* Assets.xcassets */; };
-		38F7422B2A17E56400AD775E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F742292A17E56400AD775E /* LaunchScreen.storyboard */; };
+		3831A6AF2A2540E70080958F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3831A6AE2A2540E70080958F /* AppDelegate.swift */; };
+		3831A6B12A2540E70080958F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3831A6B02A2540E70080958F /* SceneDelegate.swift */; };
+		3831A6B32A2540E70080958F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3831A6B22A2540E70080958F /* ViewController.swift */; };
+		3831A6B82A2540E80080958F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3831A6B72A2540E80080958F /* Assets.xcassets */; };
+		3831A6BB2A2540E80080958F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3831A6B92A2540E80080958F /* LaunchScreen.storyboard */; };
+		3831A6C42A25430A0080958F /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3831A6C32A25430A0080958F /* OpenAISwift */; };
+		3831A6C62A2544EA0080958F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3831A6C52A2544EA0080958F /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38F7421B2A17E56300AD775E /* chatGPT-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chatGPT-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		38F7421E2A17E56300AD775E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		38F742202A17E56300AD775E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		38F742222A17E56300AD775E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		38F742252A17E56300AD775E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		38F742272A17E56400AD775E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		38F7422A2A17E56400AD775E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		38F7422C2A17E56400AD775E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3831A6AB2A2540E60080958F /* chatGPT-app-ViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chatGPT-app-ViewCode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3831A6AE2A2540E70080958F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3831A6B02A2540E70080958F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3831A6B22A2540E70080958F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3831A6B72A2540E80080958F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3831A6BA2A2540E80080958F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3831A6BC2A2540E80080958F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3831A6C52A2544EA0080958F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		38F742182A17E56300AD775E /* Frameworks */ = {
+		3831A6A82A2540E60080958F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3831A6C42A25430A0080958F /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		38F742122A17E56300AD775E = {
+		3831A6A22A2540E60080958F = {
 			isa = PBXGroup;
 			children = (
-				38F7421D2A17E56300AD775E /* chatGPT-Project */,
-				38F7421C2A17E56300AD775E /* Products */,
+				3831A6AD2A2540E60080958F /* chatGPT-app-ViewCode */,
+				3831A6AC2A2540E60080958F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		38F7421C2A17E56300AD775E /* Products */ = {
+		3831A6AC2A2540E60080958F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				38F7421B2A17E56300AD775E /* chatGPT-Project.app */,
+				3831A6AB2A2540E60080958F /* chatGPT-app-ViewCode.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38F7421D2A17E56300AD775E /* chatGPT-Project */ = {
+		3831A6AD2A2540E60080958F /* chatGPT-app-ViewCode */ = {
 			isa = PBXGroup;
 			children = (
-				38F7421E2A17E56300AD775E /* AppDelegate.swift */,
-				38F742202A17E56300AD775E /* SceneDelegate.swift */,
-				38F742222A17E56300AD775E /* ViewController.swift */,
-				38F742242A17E56300AD775E /* Main.storyboard */,
-				38F742272A17E56400AD775E /* Assets.xcassets */,
-				38F742292A17E56400AD775E /* LaunchScreen.storyboard */,
-				38F7422C2A17E56400AD775E /* Info.plist */,
+				3831A6AE2A2540E70080958F /* AppDelegate.swift */,
+				3831A6B02A2540E70080958F /* SceneDelegate.swift */,
+				3831A6B22A2540E70080958F /* ViewController.swift */,
+				3831A6B72A2540E80080958F /* Assets.xcassets */,
+				3831A6B92A2540E80080958F /* LaunchScreen.storyboard */,
+				3831A6BC2A2540E80080958F /* Info.plist */,
+				3831A6C52A2544EA0080958F /* API.swift */,
 			);
-			path = "chatGPT-Project";
+			path = "chatGPT-app-ViewCode";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		38F7421A2A17E56300AD775E /* chatGPT-Project */ = {
+		3831A6AA2A2540E60080958F /* chatGPT-app-ViewCode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38F7422F2A17E56400AD775E /* Build configuration list for PBXNativeTarget "chatGPT-Project" */;
+			buildConfigurationList = 3831A6BF2A2540E80080958F /* Build configuration list for PBXNativeTarget "chatGPT-app-ViewCode" */;
 			buildPhases = (
-				38F742172A17E56300AD775E /* Sources */,
-				38F742182A17E56300AD775E /* Frameworks */,
-				38F742192A17E56300AD775E /* Resources */,
+				3831A6A72A2540E60080958F /* Sources */,
+				3831A6A82A2540E60080958F /* Frameworks */,
+				3831A6A92A2540E60080958F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "chatGPT-Project";
-			productName = "chatGPT-Project";
-			productReference = 38F7421B2A17E56300AD775E /* chatGPT-Project.app */;
+			name = "chatGPT-app-ViewCode";
+			packageProductDependencies = (
+				3831A6C32A25430A0080958F /* OpenAISwift */,
+			);
+			productName = "chatGPT-app-ViewCode";
+			productReference = 3831A6AB2A2540E60080958F /* chatGPT-app-ViewCode.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		38F742132A17E56300AD775E /* Project object */ = {
+		3831A6A32A2540E60080958F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					38F7421A2A17E56300AD775E = {
+					3831A6AA2A2540E60080958F = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
-			buildConfigurationList = 38F742162A17E56300AD775E /* Build configuration list for PBXProject "chatGPT-Project" */;
+			buildConfigurationList = 3831A6A62A2540E60080958F /* Build configuration list for PBXProject "chatGPT-app-ViewCode" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +115,50 @@
 				en,
 				Base,
 			);
-			mainGroup = 38F742122A17E56300AD775E;
-			productRefGroup = 38F7421C2A17E56300AD775E /* Products */;
+			mainGroup = 3831A6A22A2540E60080958F;
+			packageReferences = (
+				3831A6C22A25430A0080958F /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
+			productRefGroup = 3831A6AC2A2540E60080958F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				38F7421A2A17E56300AD775E /* chatGPT-Project */,
+				3831A6AA2A2540E60080958F /* chatGPT-app-ViewCode */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		38F742192A17E56300AD775E /* Resources */ = {
+		3831A6A92A2540E60080958F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38F7422B2A17E56400AD775E /* LaunchScreen.storyboard in Resources */,
-				38F742282A17E56400AD775E /* Assets.xcassets in Resources */,
-				38F742262A17E56300AD775E /* Main.storyboard in Resources */,
+				3831A6BB2A2540E80080958F /* LaunchScreen.storyboard in Resources */,
+				3831A6B82A2540E80080958F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		38F742172A17E56300AD775E /* Sources */ = {
+		3831A6A72A2540E60080958F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38F742232A17E56300AD775E /* ViewController.swift in Sources */,
-				38F7421F2A17E56300AD775E /* AppDelegate.swift in Sources */,
-				38F742212A17E56300AD775E /* SceneDelegate.swift in Sources */,
+				3831A6B32A2540E70080958F /* ViewController.swift in Sources */,
+				3831A6AF2A2540E70080958F /* AppDelegate.swift in Sources */,
+				3831A6C62A2544EA0080958F /* API.swift in Sources */,
+				3831A6B12A2540E70080958F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		38F742242A17E56300AD775E /* Main.storyboard */ = {
+		3831A6B92A2540E80080958F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				38F742252A17E56300AD775E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		38F742292A17E56400AD775E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				38F7422A2A17E56400AD775E /* Base */,
+				3831A6BA2A2540E80080958F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		38F7422D2A17E56400AD775E /* Debug */ = {
+		3831A6BD2A2540E80080958F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		38F7422E2A17E56400AD775E /* Release */ = {
+		3831A6BE2A2540E80080958F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +280,7 @@
 			};
 			name = Release;
 		};
-		38F742302A17E56400AD775E /* Debug */ = {
+		3831A6C02A2540E80080958F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -289,10 +289,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B4R97N34U3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "chatGPT-Project/Info.plist";
+				INFOPLIST_FILE = "chatGPT-app-ViewCode/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,7 +300,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.a1.chatGPT-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.a1.chatGPT-app-ViewCode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -311,7 +311,7 @@
 			};
 			name = Debug;
 		};
-		38F742312A17E56400AD775E /* Release */ = {
+		3831A6C12A2540E80080958F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -320,10 +320,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B4R97N34U3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "chatGPT-Project/Info.plist";
+				INFOPLIST_FILE = "chatGPT-app-ViewCode/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,7 +331,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.a1.chatGPT-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.a1.chatGPT-app-ViewCode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -345,25 +345,44 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38F742162A17E56300AD775E /* Build configuration list for PBXProject "chatGPT-Project" */ = {
+		3831A6A62A2540E60080958F /* Build configuration list for PBXProject "chatGPT-app-ViewCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38F7422D2A17E56400AD775E /* Debug */,
-				38F7422E2A17E56400AD775E /* Release */,
+				3831A6BD2A2540E80080958F /* Debug */,
+				3831A6BE2A2540E80080958F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38F7422F2A17E56400AD775E /* Build configuration list for PBXNativeTarget "chatGPT-Project" */ = {
+		3831A6BF2A2540E80080958F /* Build configuration list for PBXNativeTarget "chatGPT-app-ViewCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38F742302A17E56400AD775E /* Debug */,
-				38F742312A17E56400AD775E /* Release */,
+				3831A6C02A2540E80080958F /* Debug */,
+				3831A6C12A2540E80080958F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3831A6C22A25430A0080958F /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3831A6C32A25430A0080958F /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3831A6C22A25430A0080958F /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 38F742132A17E56300AD775E /* Project object */;
+	rootObject = 3831A6A32A2540E60080958F /* Project object */;
 }

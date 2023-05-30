@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  chatGPT-Project
+//  chatGPT-app-ViewCode
 //
-//  Created by ALYSSON DODO on 19/05/23.
+//  Created by ALYSSON DODO on 29/05/23.
 //
 
 import UIKit
