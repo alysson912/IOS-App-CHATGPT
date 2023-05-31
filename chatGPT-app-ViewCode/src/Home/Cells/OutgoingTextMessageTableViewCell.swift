@@ -47,6 +47,19 @@ class OutgoingTextMessageTableViewCell: UITableViewCell {
     private func configConstraints(){
         NSLayoutConstraint.activate([
             
+            myMessageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            myMessageView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+            myMessageView.widthAnchor.constraint(lessThanOrEqualToConstant: 250), // range max size
+            
+            messageLabel.leadingAnchor.constraint(equalTo: myMessageView.leadingAnchor, constant: 15),
+            messageLabel.topAnchor.constraint(equalTo: myMessageView.topAnchor, constant: 15),
+            messageLabel.bottomAnchor.constraint(equalTo: myMessageView.bottomAnchor, constant: -15),
+            messageLabel.trailingAnchor.constraint(equalTo: myMessageView.trailingAnchor, constant: -15),
+            
         ])
+    }
+    
+    public func setupCell( text: String){
+        messageLabel.text = text
     }
 }

@@ -41,7 +41,7 @@ class ChatViewModel {
     }
     
     public var numberOfRowsInSection: Int {
-        return 2
+        return 4
     }
     
 }

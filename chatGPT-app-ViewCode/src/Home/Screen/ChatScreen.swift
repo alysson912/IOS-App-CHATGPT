@@ -77,6 +77,7 @@ class ChatScreen: UIView {
         tableView.separatorStyle = .none // retirando linhas
         tableView.showsVerticalScrollIndicator = false // desativando scrool indicator
         // TO DO: Register
+        tableView.register(OutgoingTextMessageTableViewCell.self, forCellReuseIdentifier: OutgoingTextMessageTableViewCell.identifier)
         tableView.backgroundColor = .clear
         tableView.transform = CGAffineTransform(scaleX: 1, y: -1) // tableView Contraria/ append item de baixo pra cima
         return tableView
