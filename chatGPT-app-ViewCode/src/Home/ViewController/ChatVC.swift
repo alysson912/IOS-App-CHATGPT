@@ -11,7 +11,7 @@ import OpenAISwift
 
 
 class ChatVC: UIViewController {
-  
+    
     private var viewModel: ChatViewModel = ChatViewModel()
     private var screen: ChatScreen?
     
@@ -33,17 +33,24 @@ class ChatVC: UIViewController {
         screen?.setupTextFieldDelegate(delegate: self)
         viewModel.delegate(delegate: self)
         hideKeyboardWhenTappedAround()
+        screen?.delegate(delegate: self)
         viewModel.featchMessage(message: "Cria uma funcao com swift")
         
     }
     
+    
+}
 
+extension ChatVC: ChatScreenProtocol {
+    func sendMessage(text: String) {
+        print(text)
+    }
     
     
 }
+
+
 extension ChatVC: UITextFieldDelegate {
-   
-  
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let text = textField.text as NSString? else { return false }
@@ -61,18 +68,18 @@ extension ChatVC: UITextFieldDelegate {
                 self.screen?.sendButton.transform = .identity
             }, completion: { _ in
             })
-            }
-        return true
         }
+        return true
+    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
-    }
-    
-    
+}
+
+
 
 
 extension ChatVC: ChatViewModelProtocol {
@@ -88,10 +95,12 @@ extension ChatVC: ChatViewModelProtocol {
 
 extension ChatVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return viewModel.numberOfRowsInSection
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
         
         return UITableViewCell()
     }

@@ -8,9 +8,19 @@
 import UIKit
 import AVFoundation
 
+protocol ChatScreenProtocol: AnyObject {
+    func sendMessage(text: String)
+}
+
 class ChatScreen: UIView {
 
     var player: AVAudioPlayer?
+    
+    private weak var delegate: ChatScreenProtocol?
+    
+    public func delegate(delegate: ChatScreenProtocol?){
+        self.delegate = delegate
+    }
     
     lazy var messageInputView: UIView = {
         let view = UIView()
@@ -73,7 +83,31 @@ class ChatScreen: UIView {
     }()
     
     @objc func tappedSendButton(){
-        print(#function)
+        sendButton.touchAnimation() // extension
+        playSounnd()//
+        delegate?.sendMessage(text: inputMessageTextField.text ?? "") // enviando texto
+        pushMessage() 
+        
+        
+    }
+    
+    private func pushMessage(){
+        inputMessageTextField.text = ""
+        sendButton.isEnabled = false
+        sendButton.transform = .init(scaleX: 0.8, y: 0.8)
+    }
+    
+    private func playSounnd(){
+        guard let url = Bundle.main.url(forResource: "send", withExtension: "wav") else { return }
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            self.player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+            guard let player = self.player else { return }
+            player.play()
+        } catch let error {
+            print("Error ao tocar o som: \(error.localizedDescription)")
+        }
     }
     
     public func setupTextFieldDelegate(delegate: UITextFieldDelegate){
