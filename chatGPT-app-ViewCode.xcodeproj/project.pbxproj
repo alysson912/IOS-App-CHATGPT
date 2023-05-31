@@ -18,6 +18,12 @@
 		38A266C52A26584300DFF675 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A266C42A26584300DFF675 /* ChatViewModel.swift */; };
 		38A266C82A26586500DFF675 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A266C72A26586500DFF675 /* ServiceManager.swift */; };
 		38A266CA2A26598A00DFF675 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A266C92A26598A00DFF675 /* ChatService.swift */; };
+		38A266D42A26606600DFF675 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A266CD2A26606600DFF675 /* UIFont+Extension.swift */; };
+		38A266D52A26606600DFF675 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A266CE2A26606600DFF675 /* UIColor+Extension.swift */; };
+		38A266D62A26606600DFF675 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A266CF2A26606600DFF675 /* UIButton+Extension.swift */; };
+		38A266D72A26606600DFF675 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A266D02A26606600DFF675 /* UIViewController+Extension.swift */; };
+		38A266D82A26606600DFF675 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A266D12A26606600DFF675 /* String+Extension.swift */; };
+		38A266D92A26606600DFF675 /* send.wav in Resources */ = {isa = PBXBuildFile; fileRef = 38A266D32A26606600DFF675 /* send.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,12 @@
 		38A266C42A26584300DFF675 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		38A266C72A26586500DFF675 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		38A266C92A26598A00DFF675 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		38A266CD2A26606600DFF675 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		38A266CE2A26606600DFF675 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		38A266CF2A26606600DFF675 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		38A266D02A26606600DFF675 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		38A266D12A26606600DFF675 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		38A266D32A26606600DFF675 /* send.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = send.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,7 @@
 		38A266BD2A25789100DFF675 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				38A266CB2A26606600DFF675 /* Utils */,
 				38A266C62A26585200DFF675 /* Service */,
 				38A266BE2A25789C00DFF675 /* Home */,
 			);
@@ -127,6 +140,35 @@
 				38A266C92A26598A00DFF675 /* ChatService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		38A266CB2A26606600DFF675 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				38A266CC2A26606600DFF675 /* Extension */,
+				38A266D22A26606600DFF675 /* Sound */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		38A266CC2A26606600DFF675 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				38A266CD2A26606600DFF675 /* UIFont+Extension.swift */,
+				38A266CE2A26606600DFF675 /* UIColor+Extension.swift */,
+				38A266CF2A26606600DFF675 /* UIButton+Extension.swift */,
+				38A266D02A26606600DFF675 /* UIViewController+Extension.swift */,
+				38A266D12A26606600DFF675 /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		38A266D22A26606600DFF675 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				38A266D32A26606600DFF675 /* send.wav */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A266D92A26606600DFF675 /* send.wav in Resources */,
 				3831A6BB2A2540E80080958F /* LaunchScreen.storyboard in Resources */,
 				3831A6B82A2540E80080958F /* Assets.xcassets in Resources */,
 			);
@@ -205,14 +248,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A266D72A26606600DFF675 /* UIViewController+Extension.swift in Sources */,
 				3831A6B32A2540E70080958F /* ChatVC.swift in Sources */,
 				38A266C22A2578D700DFF675 /* ChatScreen.swift in Sources */,
 				3831A6AF2A2540E70080958F /* AppDelegate.swift in Sources */,
+				38A266D62A26606600DFF675 /* UIButton+Extension.swift in Sources */,
 				3831A6C62A2544EA0080958F /* API.swift in Sources */,
+				38A266D82A26606600DFF675 /* String+Extension.swift in Sources */,
 				38A266C52A26584300DFF675 /* ChatViewModel.swift in Sources */,
 				38A266CA2A26598A00DFF675 /* ChatService.swift in Sources */,
+				38A266D42A26606600DFF675 /* UIFont+Extension.swift in Sources */,
 				38A266C82A26586500DFF675 /* ServiceManager.swift in Sources */,
 				3831A6B12A2540E70080958F /* SceneDelegate.swift in Sources */,
+				38A266D52A26606600DFF675 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +407,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,6 +439,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
