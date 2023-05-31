@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381B091C2A278B1000BC7687 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381B091B2A278B1000BC7687 /* UITextField+Extension.swift */; };
 		3831A6AF2A2540E70080958F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3831A6AE2A2540E70080958F /* AppDelegate.swift */; };
 		3831A6B12A2540E70080958F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3831A6B02A2540E70080958F /* SceneDelegate.swift */; };
 		3831A6B32A2540E70080958F /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3831A6B22A2540E70080958F /* ChatVC.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		381B091B2A278B1000BC7687 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		3831A6AB2A2540E60080958F /* chatGPT-app-ViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chatGPT-app-ViewCode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3831A6AE2A2540E70080958F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3831A6B02A2540E70080958F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		38A266CC2A26606600DFF675 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				381B091B2A278B1000BC7687 /* UITextField+Extension.swift */,
 				38A266CD2A26606600DFF675 /* UIFont+Extension.swift */,
 				38A266CE2A26606600DFF675 /* UIColor+Extension.swift */,
 				38A266CF2A26606600DFF675 /* UIButton+Extension.swift */,
@@ -257,6 +260,7 @@
 				38A266D82A26606600DFF675 /* String+Extension.swift in Sources */,
 				38A266C52A26584300DFF675 /* ChatViewModel.swift in Sources */,
 				38A266CA2A26598A00DFF675 /* ChatService.swift in Sources */,
+				381B091C2A278B1000BC7687 /* UITextField+Extension.swift in Sources */,
 				38A266D42A26606600DFF675 /* UIFont+Extension.swift in Sources */,
 				38A266C82A26586500DFF675 /* ServiceManager.swift in Sources */,
 				3831A6B12A2540E70080958F /* SceneDelegate.swift in Sources */,

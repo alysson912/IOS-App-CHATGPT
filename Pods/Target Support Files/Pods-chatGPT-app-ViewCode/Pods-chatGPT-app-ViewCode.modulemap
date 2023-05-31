@@ -1,0 +1,6 @@
+framework module Pods_chatGPT_app_ViewCode {
+  umbrella header "Pods-chatGPT-app-ViewCode-umbrella.h"
+
+  export *
+  module * { export * }
+}

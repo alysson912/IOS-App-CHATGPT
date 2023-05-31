@@ -57,6 +57,7 @@ class ChatScreen: UIView {
         tf.placeholder = "Digite aqui"
         tf.font = UIFont.helveticaNeueMedium(size: 16) // customFont+extension
        // tf.isSecureTextEntry = false
+        tf.addDoneButtonOnKeyboard()
         return tf
     }()
     

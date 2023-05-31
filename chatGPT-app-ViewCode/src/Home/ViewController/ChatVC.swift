@@ -32,6 +32,7 @@ class ChatVC: UIViewController {
         screen?.setupTableViewProtocol(delegate: self, dataSource: self)
         screen?.setupTextFieldDelegate(delegate: self)
         viewModel.delegate(delegate: self)
+        hideKeyboardWhenTappedAround()
         viewModel.featchMessage(message: "Cria uma funcao com swift")
         
     }
