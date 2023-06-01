@@ -78,6 +78,7 @@ class ChatScreen: UIView {
         tableView.showsVerticalScrollIndicator = false // desativando scrool indicator
         // TO DO: Register
         tableView.register(OutgoingTextMessageTableViewCell.self, forCellReuseIdentifier: OutgoingTextMessageTableViewCell.identifier)
+        tableView.register(IncomingTextMessageTableViewCell.self.self, forCellReuseIdentifier: IncomingTextMessageTableViewCell.identifier)
         tableView.backgroundColor = .clear
         tableView.transform = CGAffineTransform(scaleX: 1, y: -1) // tableView Contraria/ append item de baixo pra cima
         return tableView
@@ -109,6 +110,10 @@ class ChatScreen: UIView {
         } catch let error {
             print("Error ao tocar o som: \(error.localizedDescription)")
         }
+    }
+    
+    public func reloadTableView(){
+        tableView.reloadData()
     }
     
     public func setupTextFieldDelegate(delegate: UITextFieldDelegate){

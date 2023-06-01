@@ -15,6 +15,7 @@ class OutgoingTextMessageTableViewCell: UITableViewCell {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .orange
+        view.layer.cornerRadius = 20
         view.layer.maskedCorners = [ .layerMinXMaxYCorner, .layerMinXMinYCorner, .layerMaxXMinYCorner] // custom cornerRadius
         return view
     }()
@@ -31,6 +32,7 @@ class OutgoingTextMessageTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none // disable select cell
+        transform = CGAffineTransform(scaleX: 1, y: -1)
         backgroundColor = .backGround
         addElements()
         configConstraints()
@@ -59,7 +61,7 @@ class OutgoingTextMessageTableViewCell: UITableViewCell {
         ])
     }
     
-    public func setupCell( text: String){
-        messageLabel.text = text
+    public func setupCell( data: MessageModel){
+        messageLabel.text = data.message
     }
 }
