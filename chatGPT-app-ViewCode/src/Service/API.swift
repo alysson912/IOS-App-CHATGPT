@@ -10,6 +10,6 @@ import Foundation
 
 
 struct API {
-    static let authToken: String = "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"
+    static let authToken: String = "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"
 }
       

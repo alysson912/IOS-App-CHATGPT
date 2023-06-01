@@ -14,7 +14,7 @@ class ChatVC: UIViewController {
     
     private var viewModel: ChatViewModel = ChatViewModel()
     private var screen: ChatScreen?
-    
+    private var loading: Loading?
     
     override func loadView() {
         screen = ChatScreen()
@@ -27,6 +27,7 @@ class ChatVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loading = Loading(viewController: self)
         screen?.setupTableViewProtocol(delegate: self, dataSource: self)
         screen?.setupTextFieldDelegate(delegate: self)
         viewModel.delegate(delegate: self)
@@ -52,6 +53,7 @@ extension ChatVC: ChatScreenProtocol {
     func sendMessage(text: String) {
         viewModel.addMessage(message: text, type: .user)
         screen?.reloadTableView()
+        loading?.show(message: "")
         viewModel.featchMessage(message: text)
     }
 }
@@ -87,11 +89,13 @@ extension ChatVC: UITextFieldDelegate {
 
 extension ChatVC: ChatViewModelProtocol {
     func succes() {
+        loading?.hide()
         reloadTableView()
         vibrate()
     }
     
     func error(message: String) {
+        loading?.hide()
         reloadTableView()
         vibrate()
     }

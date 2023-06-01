@@ -62,6 +62,7 @@ class ChatScreen: UIView {
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.autocorrectionType = .no
         tf.backgroundColor = .white
+        tf.textColor = .darkGray
         tf.borderStyle = .roundedRect
         tf.keyboardType = .asciiCapable
         tf.placeholder = "Digite aqui"
